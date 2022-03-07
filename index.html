@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Akan Name Generator</title>
+  </head>
+  <body>
+    <h1>How nice of you to visit!</h1>
+    <h2>Akan Name Generator</h2>
+    <p>I made a super-cool calculator for curious people like you and I. Its amazing and only feature is this:</p>
+    <ul>
+      <li>It generates your gender-specific Akan Name.</li>
+    </ul>
+    <h3>Give it a go!</h3>
+    <form>
+      <div class="mb-3">
+        <label for="Day" class="form-control" id="Day">Day</label>
+        <input type="number" class="form-control" id="Day">
+      </div>
+      <div class="mb-3">
+        <div class="mb-3">
+          <label for="Month" class="form-label" name="Month">Month</label>
+          <input type="number" class="form-control" id="Month" required min="1" required max="12">
+        </div>
+        <div class="mb-3">
+          <div class="mb-3">
+            <label for="Year" class="form-label" name="Year" id="Year">Year</label>
+            <input type="number" class="form-control" id="Year">
+          </div>
+          <div class="mb-3">
+            <label class="form-check" for="Gender" name="Gender">Gender</label>
+            <div class="btn-group" role="group" required>
+              <input type="checkbox" class="btn-check" id="Gender" autocomplete="off">
+              <label class="btn btn-outline-primary" for="Gender" id="Gender" autocomplete="off">Male</label>
+              <input type="checkbox" class="btn-check" id="Gender" autocomplete="off">
+              <label class="btn btn-outline-primary" for="Gender">Female</label>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="submit" onclick='alert("You are almost there!")';>Generate Akan Name</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
